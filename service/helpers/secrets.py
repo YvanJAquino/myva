@@ -4,8 +4,8 @@ from google.cloud import secretmanager
 
 class Names:
 
-    TWILIO = "projects/150895630238/secrets/TWILIO"
-    MAPS_API_KEY = "projects/150895630238/secrets/GOOGLE_MAPS_API_KEY"
+    TWILIO = "projects/150895630238/secrets/TWILIO/versions/latest"
+    MAPS_API_KEY = "projects/150895630238/secrets/GOOGLE_MAPS_API_KEY/versions/latest"
 
 
 class MyVA411Secrets:
