@@ -6,7 +6,7 @@ RUN     apt update && \
         curl -sSL https://install.python-poetry.org | python - --preview
 
 FROM    base
-ADD     . ./ 
+COPY     . ./ 
 RUN     poetry config virtualenvs.create false && \
         poetry install --only main
 WORKDIR /src/service
