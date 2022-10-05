@@ -14,7 +14,7 @@ app = FastAPI()
 secrets = MyVA411Secrets()
 sms = Client(secrets.twilio_account_sid, secrets.twilio_auth_token)
 
-TWILIO_PHONE_NUMBER = os.environ['TWILIO_PHONE_NUMBER']
+TWILIO_PHONE_NUMBER = secrets.twilio_phone_number
 
 
 def make_maps_url(address: str) -> str:
